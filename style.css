@@ -1,0 +1,72 @@
+body, html {
+    height: 99%;
+}
+
+.popup {
+    padding: 1%;
+    display: none;
+    width: 50%;
+    max-width: 500px;
+    margin: 0px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: 20px;
+}
+
+.formDiv {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: auto 0px;
+    font-size: 24px;
+}
+
+.blackBack {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    display: none;
+}
+
+.show {
+    display: inline-block;
+    z-index: 2;
+}
+
+.showBlock {
+    display: block;
+    z-index: 1;
+}
+
+.inputFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.mainFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width: 850px) {
+    .mainFlex {
+        flex-direction: column;
+    }
+}

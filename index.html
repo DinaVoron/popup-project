@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="popupWin" class="popup">
+            <h1>Хотите себе такой же попап?</h1>
+            <p>Оставьте ваши данные</p>
+            <form name="popupForm">
+                <div class ="mainFlex">
+                    <div class="flex">
+                        <div class ="inputFlex">
+                            <label>
+                                Имя:<br>
+                                <input type="text" name="name">
+                            </label>
+                            <label>
+                                Телефон:<br>
+                                <input type="text" name="phone">
+                            </label>
+                            <label>
+                                Email:<br>
+                                <input type="text" name="email">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <label>
+                            Компания:<br>
+                            <input type="text" name ="work">
+                        </label>
+                        <label>
+                            Согласие на обработку данных:
+                            <input type="checkbox" name="accept">
+                        </label>
+                    </div> 
+                </div>
+                <div class ="buttonFlex">
+                    <button type="button" id="popupSend">Отправить</button>
+                </div>
+            </form>
+        </div>
+        <div class="blackBack" id="black">
+        </div>
+        <div class="formDiv">
+            <form>
+                <button type="button" id="popupButton">Начать</button>
+            </form>
+            <div id="valueDiv">
+                
+            </div>
+        </div>
+    <script src="main.js"></script>
+    </body>
+</html>
