@@ -1,42 +1,49 @@
-body, html {
-    height: 99%;
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 200vh;
+}
+
+* + * {
+    margin-top: 0.5em;
+}
+
+.mainForm {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .popup {
-    padding: 1%;
+    padding: 2%;
     display: none;
     width: 50%;
     max-width: 500px;
     margin: 0px auto;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    font-size: 20px;
-}
-
-.formDiv {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-button {
-    margin: auto 0px;
-    font-size: 24px;
 }
 
 .blackBack {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    background-color: black;
+    position: fixed;
+    margin-top: 0em;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
+}
+
+.popupForm button {
+    margin-top: 1em;
+}
+
+button {
+    font-size: 1.2em;
 }
 
 .show {
@@ -57,7 +64,6 @@ button {
 .flex {
     display: flex;
     flex-direction: column;
-    padding: 1%;
 }
 
 .mainFlex {
@@ -65,8 +71,22 @@ button {
     flex-direction: row;
 }
 
+.mainFlex .flex + .flex{
+    margin-left: 2em;
+    margin-top: 0em;
+}
+
+.flex input {
+    margin: 0px;
+    vertical-align: middle;
+}
+
 @media(max-width: 850px) {
     .mainFlex {
         flex-direction: column;
+    }
+    .mainFlex .flex + .flex{
+        margin-left: 0em;
+        margin-top: 0.5em;
     }
 }
