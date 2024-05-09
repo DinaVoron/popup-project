@@ -81,6 +81,26 @@ button {
     vertical-align: middle;
 }
 
+.close-button {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    cursor: pointer;
+    text-indent: 2em;
+    overflow: hidden;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.close-button::after {
+    position: absolute;
+    font-size: 1.5em;
+    text-indent: 0;
+    top: -0.2em;
+    left: 0.05em;
+    content: "\00D7";
+}
+
 @media(max-width: 850px) {
     .mainFlex {
         flex-direction: column;
